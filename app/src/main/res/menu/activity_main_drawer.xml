@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_register"
+            android:title="Registeration" />
+        <item
+            android:id="@+id/nav_login"
+            android:title="Login Job Seeker" />
+
+        <item
+            android:id="@+id/nav_loginhr"
+            android:title="Login HR" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_Aboutus"
+                android:title="About us" />
+            <item
+                android:id="@+id/nav_Contact"
+                android:title="Contact us" />
+        </menu>
+    </item>
+
+</menu>

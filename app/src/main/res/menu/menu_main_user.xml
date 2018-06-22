@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ahmed.jms.MainUserActivity">
+    <item
+        android:id="@+id/action_CV"
+        android:orderInCategory="100"
+        android:title="CV"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_review"
+        android:orderInCategory="100"
+        android:title="Review Company"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_not"
+        android:orderInCategory="100"
+        android:title="My Notification"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_map"
+        android:orderInCategory="100"
+        android:title="Map"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_ev"
+        android:visible="false"
+        android:orderInCategory="100"
+        android:title="Interview Evaluation"
+        app:showAsAction="never" />
+</menu>

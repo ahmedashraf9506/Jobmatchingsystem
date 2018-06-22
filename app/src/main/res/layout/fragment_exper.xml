@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahmed.jms.ExperFragment">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="Experience Data"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/swexper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="Have Experience"
+            android:layout_below="@+id/textView6"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:id="@+id/txtjobtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/swexper"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+
+            android:entries="@array/jobtitile"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtcomp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtjobtitle"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:hint="Company Name"
+            android:inputType="textPersonName" />
+
+        <Spinner
+            android:id="@+id/spnexphr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtcomp"
+            android:layout_marginTop="20dp"
+            android:entries="@array/arrexp" />
+
+        <Spinner
+            android:id="@+id/spnlevelhr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spnexphr"
+            android:layout_marginTop="23dp"
+            android:entries="@array/arrlevel" />
+
+        <EditText
+            android:id="@+id/txtcoursename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:hint="Course Name"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/spnlevelhr"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/txttraining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtcoursename"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="Traning Center"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtyearcourse"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txttraining"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Year"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/txtperiodcourse"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/txtyearcourse"
+            android:ems="10"
+            android:hint="Course Period"
+            android:inputType="number"
+            android:visibility="invisible"
+            tools:text="0" />
+
+        <Button
+            android:id="@+id/btnsavecvs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtyearcourse"
+            android:layout_centerHorizontal="true"
+            android:text="Complete And Save CV Data" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
+</RelativeLayout>

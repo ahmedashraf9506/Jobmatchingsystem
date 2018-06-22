@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompProfileFragment">
+
+        android:text="@string/hello_blank_fragment" />
+
+    <Spinner
+        android:id="@+id/spnhrexpernew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/arrexp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp" />
+
+    <Spinner
+        android:id="@+id/spnspechrnew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/arrspeclization"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spnhrexpernew"
+        android:layout_marginTop="13dp" />
+
+    <ListView
+        android:id="@+id/lsthr"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+</RelativeLayout>
